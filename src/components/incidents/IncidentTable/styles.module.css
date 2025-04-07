@@ -1,0 +1,40 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table th {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    border-right: none;
+}
+
+.table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.row:hover {
+    background-color: #333;
+}
+
+.priority-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

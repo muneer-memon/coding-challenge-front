@@ -1,0 +1,26 @@
+/* Set a dark background color with light text for the body */
+body {
+    background-color: #444; /* Dark grey background */
+    color: white;           /* White text */
+    margin: 0;              /* Remove default margin */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Add hover effect for interactive elements like buttons, links, and cards */
+button, a, [role="button"],
+.table-row, .list-item,
+.card, [data-hover-effect] {
+    transition: background-color 0.2s ease; /* Smooth background color change */
+}
+
+button:hover, a:hover, [role="button"]:hover,
+.table-row:hover, .list-item:hover,
+.card:hover, [data-hover-effect]:hover {
+    background-color: #333 !important; /* Darker background on hover */
+}
+
+/* Adjust the padding of titles */
+.title {
+    padding-left: 10px; /* Add left padding for better spacing */
+}
