@@ -14,7 +14,6 @@ const IncidentTable = ({ incidents }) => {
                 <th>ID</th>
                 <th>Location Name</th>
                 <th>Incident Name</th>
-                <th>Description</th>
             </tr>
             </thead>
             <tbody>
@@ -27,7 +26,6 @@ const IncidentTable = ({ incidents }) => {
                     <td>{incident.id}</td>
                     <td>{incident.locationName}</td>
                     <td>{incident.name}</td>
-                    <td>{incident.description}</td>
                 </tr>
             ))}
             </tbody>
@@ -42,8 +40,7 @@ IncidentTable.propTypes = {
             name: PropTypes.string.isRequired,
             datetime: PropTypes.string.isRequired,
             priority: PropTypes.number.isRequired,
-            locationName: PropTypes.string.isRequired,
-            description: PropTypes.string
+            locationName: PropTypes.string.isRequired
         })
     ).isRequired
 };

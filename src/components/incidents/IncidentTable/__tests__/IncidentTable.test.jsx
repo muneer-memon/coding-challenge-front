@@ -9,8 +9,7 @@ const mockIncidents = [
         datetime: '2022-01-01T12:00:00Z',
         priority: 1,
         locationId: 'loc1',
-        locationName: 'T1 Lobby',
-        description: 'Major fire incident'
+        locationName: 'T1 Lobby'
     },
     {
         id: 2,
@@ -18,8 +17,7 @@ const mockIncidents = [
         datetime: '2022-01-02T12:00:00Z',
         priority: 2,
         locationId: 'loc2',
-        locationName: 'T2 Hallway',
-        description: 'Patient needs assistance'
+        locationName: 'T2 Hallway'
     }
 ];
 

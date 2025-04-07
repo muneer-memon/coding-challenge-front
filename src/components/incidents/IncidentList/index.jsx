@@ -20,9 +20,6 @@ const IncidentList = ({ incidents }) => {
                         <div>
                             <span className={styles.name}>{incident.name}</span>
                         </div>
-                        {incident.description && (
-                            <div className={styles.description}>{incident.description}</div>
-                        )}
                     </div>
                 </div>
             ))}
@@ -37,8 +34,7 @@ IncidentList.propTypes = {
             name: PropTypes.string.isRequired,
             dateTime: PropTypes.string.isRequired,
             priority: PropTypes.number.isRequired,
-            locationName: PropTypes.string.isRequired,
-            description: PropTypes.string
+            locationName: PropTypes.string.isRequired
         })
     ).isRequired
 };

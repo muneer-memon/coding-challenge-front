@@ -19,16 +19,14 @@ describe('IncidentList', () => {
             name: 'Incident 1',
             datetime: '2023-01-01T10:00:00Z',
             priority: 1,
-            locationName: 'Location A',
-            description: 'Desc A'
+            locationName: 'Location A'
         },
         {
             id: 2,
             name: 'Incident 2',
             datetime: '2023-01-02T12:00:00Z',
             priority: 2,
-            locationName: 'Location B',
-            // No description
+            locationName: 'Location B'
         }
     ];
 
@@ -49,10 +47,6 @@ describe('IncidentList', () => {
             expect(screen.getByText(incident.name)).toBeInTheDocument();
             expect(screen.getByText(incident.locationName)).toBeInTheDocument();
         });
-
-        // Descriptions
-        expect(screen.getByText('Desc A')).toBeInTheDocument();
-        expect(screen.queryByText(/Desc B/)).not.toBeInTheDocument();
 
         // Icons
         const icons = screen.getAllByTestId('priority-icon');
